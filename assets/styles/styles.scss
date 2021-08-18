@@ -1,0 +1,147 @@
+$grey-light: #e2e2e2;
+$black: #333333;
+$grey-dark: #666666;
+$green: #4ed17b;
+$white: #ffffff;
+
+$headingFontSize: 20px;
+$mainFontSize: 15px;
+$priceFontSize: 35px;
+
+$fontWeightRegular: 400;
+$fontWeightBold: 700;
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: $black;
+    font-weight: $fontWeightRegular;
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    section {
+        margin: 40px 0px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1180px;
+    margin: 0px auto;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    max-width: 33%;
+}
+
+.card {
+    border: 1px solid $grey-light;
+    margin: 0px 25px;
+}
+
+.card-image {
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.card-info {
+    padding: 30px 25px;
+    font-size: $mainFontSize;
+}
+
+.heading {
+    h6 {
+        font-size: $headingFontSize;
+        margin: 0px;
+        padding: 0px;
+        font-weight: $fontWeightBold;
+        margin-bottom: 15px;
+    }
+}
+
+.description {
+    margin-bottom: 15px;
+    max-width: 80%;
+}
+
+.price-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: $priceFontSize;
+    font-weight: $fontWeightBold;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 500ms ease;
+        opacity: 0.5;
+    }
+}
+
+.shopping-icon {
+    display: inline-block;
+    background: $green;
+    border-radius: 5px;
+    color: $white;
+    height: 40px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    i {
+        display: inline-block;
+        color: $white;
+        font-size: 25px;
+    }
+}
+
+// Responsive Styles
+
+@media (max-width: 1080px) {
+    .shopping-icon {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 925px) {
+    .card {
+        margin: 0px 15px;
+    }
+
+    .description {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 740px) {
+    .container {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .card-container {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        margin: 0px 25px;
+    }
+
+    .description {
+        max-width: 70%;
+    }
+}

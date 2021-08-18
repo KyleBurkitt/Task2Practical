@@ -1,0 +1,144 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
+}
+
+main section {
+  margin: 40px 0px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1180px;
+  margin: 0px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 33%;
+}
+
+.card {
+  border: 1px solid #e2e2e2;
+  margin: 0px 25px;
+}
+
+.card-image img {
+  height: auto;
+  width: 100%;
+}
+
+.card-info {
+  padding: 30px 25px;
+  font-size: 15px;
+}
+
+.heading h6 {
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.description {
+  margin-bottom: 15px;
+  max-width: 80%;
+}
+
+.price-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.link:hover {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  opacity: 0.5;
+}
+
+.shopping-icon {
+  display: inline-block;
+  background: #4ed17b;
+  border-radius: 5px;
+  color: #ffffff;
+  height: 40px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+}
+
+.shopping-icon i {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+@media (max-width: 1080px) {
+  .shopping-icon {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 925px) {
+  .card {
+    margin: 0px 15px;
+  }
+  .description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 740px) {
+  .container {
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-container {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .card {
+    margin: 0px 25px;
+  }
+  .description {
+    max-width: 70%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
